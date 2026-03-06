@@ -71,7 +71,7 @@ The customers who bought all the products (5 and 6) are customers with IDs 1 and
 
 ### My Code:
 
-```
+```sql
 # Write your MySQL query statement below
 select customer_id from 
 (select distinct customer_id,product_key from Customer) as A
