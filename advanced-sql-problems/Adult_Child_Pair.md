@@ -43,7 +43,7 @@ Children **cannot appear alone** in the result.
 - The solution should use SQL logic to pair rows appropriately.
 
 ## My Code
-```
+```sql
 select adult,child from 
 (select Person as child,row_number() over(order by Person) as rw_num from People where Type='Child') as c
 right join
